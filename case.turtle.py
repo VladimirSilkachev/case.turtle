@@ -4,7 +4,7 @@
             #S.Vinnikov
 
 import turtle
-
+import math
 def blade1():
     #TODO: (vova):  левый синий треуголльник
     pass
@@ -25,17 +25,43 @@ def rocket():
     #TODO: (Kirill): трапеция
     pass
 
-def tail_triangle1():
-   #TODO: (Vinn) правый начало
-    pass
+def tail_triangle1(z,x):
+    turtle.up()
+    turtle.setpos(z,x)
+    turtle.down()
+    turtle.right(135)
+    turtle.forward(50)
+    turtle.right(45)
+    turtle.forward(sqrt(5000))
+    turtle.right(45)
+    turtle.forward(50)
+pass
 
-def tail_triangle2():
-   #TODO: (Vinn) левый начало
-    pass
+def tail_triangle2(c,d):
+    turtle.up()
+    turtle.setpos(c,d)
+    turtle.down()
+    turtle.right(90)
+    turtle.forward(sqrt(5000))
+    turtle.right(45)
+    turtle.forward(50)
+    turtle.right(90)
+    turtle.forward(50)
+pass
 
-def tail():
-   #TODO: (Vinn) квадрат
-    pass
+def tail(a,b):
+   turtle.up()
+   turtle.setpos(a,b)
+   turtle.down()
+   turtle.right(45)
+   turtle.forward(50)
+   turtle.right(90)
+   turtle.forward(50)
+   turtle.right(90)
+   turtle.forward(50)
+   turtle.right(90)
+   turtle.forward(50)
+pass
 def main():
     blade1()
     blade2()
@@ -45,7 +71,7 @@ def main():
     tail_triangle1()
     tail_triangle2()
     tail()
-    pass
+pass
 
 main()
 turtle.done()
