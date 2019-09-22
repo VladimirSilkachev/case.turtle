@@ -32,7 +32,7 @@ def tail_triangle1(z,x):
     turtle.right(135)
     turtle.forward(50)
     turtle.right(45)
-    turtle.forward(sqrt(5000))
+    turtle.forward(math.sqrt(5000))
     turtle.right(45)
     turtle.forward(50)
 pass
@@ -42,7 +42,7 @@ def tail_triangle2(c,d):
     turtle.setpos(c,d)
     turtle.down()
     turtle.right(90)
-    turtle.forward(sqrt(5000))
+    turtle.forward(math.sqrt(5000))
     turtle.right(45)
     turtle.forward(50)
     turtle.right(90)
