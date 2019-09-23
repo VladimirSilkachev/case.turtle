@@ -1,17 +1,40 @@
-#Hello guys
-#Developers V.Silkachev
+
+#Developers V.Silkachev 40%
             #K.Popov
             #S.Vinnikov
 
 import turtle
 import math
-def blade1():
-    #TODO: (vova):  левый синий треуголльник
-    pass
+def blade1(t,r):
+#TODO: (vova): правый зелёный параллелограм
+turtle.color('green')
+turtle.begin_fill()
+turtle.up()
+turtle.setposition(t, r)
+turtle.down()
+turtle.left(180)
+turtle.fd(100)
+turtle.left(45)
+turtle.fd(70)
+turtle.left(135)
+turtle.fd(100)
+turtle.left(45)
+turtle.fd(70)
+turtle.end_fill()
+pass
 
 def blade2():
-    #TODO: (vova): правый красный паралледограм
-    pass
+#TODO: (vova): левый синий треугольник
+turtle.color('blue')
+turtle.begin_fill()
+turtle.right(45)
+turtle.fd(100)
+turtle.right(135)
+turtle.fd(73)
+turtle.right(90)
+turtle.fd(73)
+turtle.end_fill()
+pass 
 
 def triangle1():
     #TODO: (Kirill): левый большой
