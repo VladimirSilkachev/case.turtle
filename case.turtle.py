@@ -1,12 +1,33 @@
 
+#Developers V.Silkachev 40%
+            #K.Popov 45%
+            #S.Vinnikov(30%)
 import turtle
 import math
+
 def blade1(t,r):
     turtle.up
     turtle.color('green')
     turtle.begin_fill()
     turtle.up()
     turtle.setposition(t,r)
+    turtle.down()
+    turtle.left(180)
+    turtle.fd(100)
+    turtle.left(45)
+    turtle.fd(70)
+    turtle.left(135)
+    turtle.fd(100)
+    turtle.left(45)
+    turtle.fd(70)
+    turtle.end_fill()
+pass
+import math
+def blade1(t,r):
+    turtle.color('green')
+    turtle.begin_fill()
+    turtle.up()
+    turtle.setposition(t, r)
     turtle.down()
     turtle.left(180)
     turtle.fd(100)
@@ -29,6 +50,16 @@ def blade2():
     turtle.right(90)
     turtle.fd(73)
     turtle.end_fill()
+pass
+turtle.color('blue')
+turtle.begin_fill()
+turtle.right(45)
+turtle.fd(100)
+turtle.right(135)
+turtle.fd(73)
+turtle.right(90)
+turtle.fd(73)
+turtle.end_fill()
 pass
 
 def triangle1(k,o):
@@ -126,12 +157,15 @@ def main():
     tail(0, 0)
     triangle1(125,-18)
     triangle2(201,-92)
-    rocket()
-    blade1(201,58)
+    tail_triangle1(125, -18)
+    tail_triangle2(54, -18)
+    tail(0, 0)
+    blade1()
     blade2()
-
-pass
+    triangle1()
+    triangle2()
+    rocket()
+    pass
 
 main()
 turtle.done()
-
