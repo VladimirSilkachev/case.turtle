@@ -1,7 +1,7 @@
 
 #Developers V.Silkachev 40%
-            #K.Popov
-            #S.Vinnikov
+            #K.Popov 45%
+            #S.Vinnikov 30%
 
 import turtle
 import math
