@@ -1,29 +1,8 @@
-
-#Developers V.Silkachev 40%
-            #K.Popov 45%
-            #S.Vinnikov(30%)
 import turtle
 import math
 
 def blade1(t,r):
-    turtle.up
-    turtle.color('green')
-    turtle.begin_fill()
-    turtle.up()
-    turtle.setposition(t,r)
-    turtle.down()
-    turtle.left(180)
-    turtle.fd(100)
-    turtle.left(45)
-    turtle.fd(70)
-    turtle.left(135)
-    turtle.fd(100)
-    turtle.left(45)
-    turtle.fd(70)
-    turtle.end_fill()
-pass
-import math
-def blade1(t,r):
+    #TODO: (vova): правый зелёный параллелограм
     turtle.color('green')
     turtle.begin_fill()
     turtle.up()
@@ -41,6 +20,7 @@ def blade1(t,r):
 pass
 
 def blade2():
+    #TODO: (vova): левый синий треугольник
     turtle.color('blue')
     turtle.begin_fill()
     turtle.right(45)
@@ -51,18 +31,9 @@ def blade2():
     turtle.fd(73)
     turtle.end_fill()
 pass
-turtle.color('blue')
-turtle.begin_fill()
-turtle.right(45)
-turtle.fd(100)
-turtle.right(135)
-turtle.fd(73)
-turtle.right(90)
-turtle.fd(73)
-turtle.end_fill()
-pass
 
 def triangle1(k,o):
+    #TODO: (Kirill): левый большой
     turtle.up()
     turtle.color('yellow')
     turtle.begin_fill()
@@ -78,9 +49,10 @@ def triangle1(k,o):
 pass
 
 def triangle2(l,f):
+    #TODO: (Kirill): правый большой
     turtle.color("red")
-    turtle.up()
     turtle.begin_fill()
+    turtle.up()
     turtle.setposition(l,f)
     turtle.down()
     turtle.right(90)
@@ -93,7 +65,8 @@ def triangle2(l,f):
 pass
 
 def rocket():
-    turtle.color("gray")
+    #TODO: (Kirill): праллелограм
+    turtle.color("black")
     turtle.begin_fill()
     turtle.left(90)
     turtle.forward(50)
@@ -157,15 +130,11 @@ def main():
     tail(0, 0)
     triangle1(125,-18)
     triangle2(201,-92)
-    tail_triangle1(125, -18)
-    tail_triangle2(54, -18)
-    tail(0, 0)
-    blade1()
-    blade2()
-    triangle1()
-    triangle2()
     rocket()
-    pass
+    blade1(201,58)
+    blade2()
+
+pass
 
 main()
 turtle.done()
