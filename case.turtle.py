@@ -1,3 +1,7 @@
+    #Developers:  Vladimir Silkachev (40%)
+    #             Alexandr Vennikov (30%)
+    #             Kirill Popov (45%)
+
 import turtle
 import math
 
